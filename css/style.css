@@ -44,3 +44,24 @@ html, body {
 	text-align:center;
 	cursor: pointer;
 }
+.personal h1 {
+	font-size:250px;
+}
+
+@media screen and (max-width:990px) {
+	.personal h1{
+		font-size: 100px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.personal h1{
+		font-size: 250px;
+	}
+	#kuan, #ming, #liang {
+		border-top-left-radius:0px 0px;
+		border-bottom-right-radius:0px 0px;
+		border-bottom-left-radius:0px 0px;
+		border-top-right-radius:0px 0px;
+	}
+} 
