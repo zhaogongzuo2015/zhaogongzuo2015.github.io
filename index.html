@@ -17,13 +17,13 @@
 		<h1>坚持于算法斗争到底， 拒绝一切不能忍的丑陋设计，该吃饭吃饭， 该找女男喷油就找，以上是找工作及保持良好心态之奥义！ 目哈哈！</h1>
 	</div>
 	<div class="row">
-		<div class="col-md-4 col-sm-4 col-xs-12 center">
+		<div id="kuan" class="personal col-md-4 col-sm-4 col-xs-12 center">
 			<h1 style="font-size:250px;">宽</h1>
 		</div>
-		<div class="col-md-4 col-sm-4 col-xs-12 center">
+		<div id="ming" class="personal col-md-4 col-sm-4 col-xs-12 center">
 			<h1 style="font-size:250px;">茗</h1>
 		</div>
-		<div class="col-md-4 col-sm-4 col-xs-12 center">
+		<div id="liang" class="personal col-md-4 col-sm-4 col-xs-12 center">
 			<h1 style="font-size:250px;">亮</h1>
 		</div>
 	</div>
@@ -33,6 +33,12 @@
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/d3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+<script type="text/javascript">
+	d3.selectAll(".personal")
+		.on("click", function(){
+			var url = "./"+d3.select(this).attr("id") +".html";
+			window.open(url,'_blank');
+		})
+</script>
 </body>
 </html>
